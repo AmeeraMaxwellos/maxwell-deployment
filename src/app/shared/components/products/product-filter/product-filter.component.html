@@ -1,0 +1,64 @@
+<div class="filters">
+  <div class="filter-header">
+    <h2 class="headline-bold">Filters</h2>
+    <button class="clear-all">Clear All</button>
+  </div>
+
+  <div class="body-bold products-found">
+    <span>{{totalProducts}} Products found</span>
+  </div>
+
+  <div class="filter-section">
+    <label for="prices" class="subtitle-bold">Prices</label>
+    <div class="price-range">
+      <div class="range-wrapper">
+        <!-- <span class="subtitle-regular"> QR </span> -->
+        <span class="subtitle-regular">{{ filters.min_price }} - QR {{ filters.max_price }}</span>
+      </div>
+      <input
+        type="range"
+        id="price-range"
+        [min]="filters.min_price"
+        [max]="filters.max_price"
+        [(ngModel)]="selectedPriceRange"
+      />
+    </div>
+  </div>
+
+  <!-- Brands filter -->
+  <div class="filter-section">
+    <label for="brand" class="subtitle-bold">Brand</label>
+    <input type="text" id="brand-search" placeholder="Search Brand" />
+    <div class="filter-options">
+      <label *ngFor="let brand of filters.brands" class="filter-option">
+        <input type="checkbox"/>
+        <span class="filter-label subtitle-regular">{{ brand.name }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Category filter -->
+  <div class="filter-section" *ngIf="filters.categories?.length">
+    <label for="category" class="subtitle-bold">Category</label>
+    <div class="filter-options">
+      <label *ngFor="let category of filters.categories" class="filter-option">
+        <input type="checkbox" /> 
+        <span class="filter-label subtitle-regular">{{ category.name }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- filter options -->
+  <div class="filter-section" *ngFor="let option of filterOptions">
+    <label for="options" class="subtitle-bold">{{ option.title }}</label>
+    <div class="filter-options">
+      <label *ngFor="let value of option.values" class="filter-option">
+        <input type="checkbox" />
+        <span class="filter-label subtitle-regular">{{ value.value }}</span>
+      </label>
+    </div>
+    
+  </div>
+  
+  
+</div>

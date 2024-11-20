@@ -1,0 +1,104 @@
+.cart-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: var(--horizontal-border);
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+}
+
+.item-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: var(--horizontal-border);
+    border-radius: var(--main-border-radius);
+    padding: 10px;
+}
+
+.details{
+    line-height: 1rem;
+}
+
+.details h2 {
+    color: var(--greyscale-text-subtile);
+    margin-bottom: 20px;
+}
+
+.details p {
+    color: var(--greyscale-text-subtile);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: var(--greyscale-text-subtile);
+}
+
+.discount-percent {
+    text-decoration: none;
+    color: var(--error-surface-default);
+    margin-left: 10px;
+}
+
+.date {
+    color: var(--primary-surface-default);
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.quantity input {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 3px 3px;
+    border: var(--horizontal-border);
+    border-radius: var(--sub-border-radius);
+
+}
+
+.remove-and-wishlist{
+    display: flex;
+}
+
+.remove-btn, .wishlist-btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 20px; 
+    background-color: var(--primary-surface-lighter);
+    margin: 0 10px; 
+}
+
+
+/* removing UP and Down default arrow from inpug tag  */
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

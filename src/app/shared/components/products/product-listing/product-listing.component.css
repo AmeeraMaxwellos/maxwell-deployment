@@ -1,0 +1,29 @@
+/* Container for filter and product listing */
+.product-listing-container {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+    box-sizing: content-box;
+
+  }
+  
+  /* Filter section */
+  .filters-section {
+    box-sizing: content-box;
+
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+  }
+
+  /* Product card grid */
+  .products-section .card-container {
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+  }
+
+  

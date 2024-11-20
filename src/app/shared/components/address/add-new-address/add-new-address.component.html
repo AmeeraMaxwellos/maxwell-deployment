@@ -1,0 +1,121 @@
+<div class="add-new-address-container d-flex justify-content-center align-items-center">
+
+  <div class="add-new-address-box">
+    <h4 class="headline-regular">Add new delivery address</h4>
+    <div class="close-button">
+      <!-- <button> -->
+        <a href="/place-order"><i class="fa-solid fa-circle-xmark"></i></a>
+      <!-- </button> -->
+    </div>
+
+    <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <div>
+
+          <label>First Name</label>
+          <input type="text" formControlName="firstName" placeholder="Enter first name" />
+        </div>
+
+        <div>
+          <label>Last Name</label>
+          <input type="text" formControlName="lastName" placeholder="Enter last name" />
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+
+        <div>
+          <label>Email</label>
+          <input type="email" formControlName="email" placeholder="Enter your email" />
+        </div>
+
+        <div>
+          <label>Phone Number</label>
+          <app-telephone-input formControlName="phoneNumber" />
+        </div>
+
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+
+
+        <div>
+          <label for="country">Country:</label>
+          <select formControlName="country" (change)="onCountryChange()">
+            <option *ngFor="let country of countries" [ngValue]="country">{{ country.country }}</option>
+          </select>
+        </div>
+
+
+        <div>
+          <label for="state">State/Province:</label>
+          <select formControlName="state">
+            <option *ngFor="let state of addressForm.value.country?.states" [value]="state">{{ state }}</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <div>
+          <label>Street</label>
+          <input type="text" formControlName="street" placeholder="Enter street number" />
+        </div>
+
+        <div>
+          <label>Zone</label>
+          <input type="text" formControlName="zone" placeholder="Enter zone number" />
+        </div>
+
+
+
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <div class="street-address">
+          <label>Landmark/Area/street Name/Any Additional information</label>
+          <input type="text" formControlName="streetAddress"
+            placeholder="Enter Your landmark or any additional instructions" />
+        </div>
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <div>
+          <label>Building Number</label>
+          <input type="text" formControlName="zip" placeholder="Enter building number" />
+        </div>
+
+        <div>
+          <label>Alternative Phone Number</label>
+          <app-telephone-input formControlName="alternativePhoneNumber" />
+        </div>
+
+
+
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <div>
+          <label>Address Type</label>
+          <div class="address-type d-flex">
+            <label><input type="radio" formControlName="addressType" value="home" /> Home</label>
+            <label><input type="radio" formControlName="addressType" value="work" /> Work</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <label><input type="checkbox" formControlName="billingSameAsShipping" /> My billing and shipping address are the
+          same</label>
+      </div>
+
+      <button type="submit" class="submit-btn body-bold">Save</button>
+    </form>
+
+
+  </div>
+</div>

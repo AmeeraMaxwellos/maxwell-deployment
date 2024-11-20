@@ -1,0 +1,33 @@
+<!-- 
+<div *ngFor="let address of addresses" class="address-card">
+    <input type="radio" name="address" class="radio-btn">
+    <div>
+        <div class="address-info">
+            <span class="name headline-bold">{{ address.name }}</span>
+            <span class="label body-regular">{{ address.label }}</span>
+            <p>{{ address.addressLine }}</p>
+            <p>{{ address.moreInfo }}</p>
+            <p>{{ address.email }} | {{ address.phone }}</p>
+        </div>
+        
+        <a href="#" class="edit-link" *ngIf="showEdit"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+    </div>
+</div>
+ -->
+
+
+ <div *ngFor="let address of addresses" class="address-card">
+    <input type="radio" name="address" class="radio-btn">
+    <div>
+        <div class="address-info">
+            <span class="name headline-bold">{{ address.name }}</span>
+            <span class="label body-regular">{{ address.label }}</span>
+            <p>{{ address.addressLine }}</p>
+            <p>{{ address.moreInfo }}</p>
+            <p>{{ address.email }} | {{ address.phone }}</p>
+        </div>
+
+        <!-- Show Edit button only if showEdit is true -->
+        <a href="#" class="edit-link" *ngIf="showEdit"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+    </div>
+</div>

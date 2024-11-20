@@ -1,0 +1,27 @@
+<div class="faq-wrapper d-flex">
+    <div class="sidebar">
+      <ul>
+        <li class="headline-regular" [class.active]="selectedCategory === 'General Questions'">
+          <a href="#" (click)="onCategorySelect('General Questions'); $event.preventDefault();">General Questions</a>
+        </li>
+        <li class="headline-regular" [class.active]="selectedCategory === 'Orders'">
+          <a href="#" (click)="onCategorySelect('Orders'); $event.preventDefault();">Orders</a>
+        </li>
+        <li class="headline-regular" [class.active]="selectedCategory === 'Payment'">
+          <a href="#" (click)="onCategorySelect('Payment'); $event.preventDefault();">Payment</a>
+        </li>
+        <li class="headline-regular" [class.active]="selectedCategory === 'Shipping'">
+          <a href="#" (click)="onCategorySelect('Shipping'); $event.preventDefault();">Shipping</a>
+        </li>
+        <li class="headline-regular" [class.active]="selectedCategory === 'Returns & Refunds'">
+          <a href="#" (click)="onCategorySelect('Returns & Refunds'); $event.preventDefault();">Returns & Refunds</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="faq-questions-content">
+      <!-- Pass the selected category to the child component -->
+      <app-faq-question-data [selectedCategory]="selectedCategory"></app-faq-question-data>
+    </div>
+  </div>
+  

@@ -1,0 +1,76 @@
+<div class="home-wrapper">
+
+    <div class="banner-container">
+        <img src="images/repair-home_big.jpg" alt="Slide Image">
+        <div class="main-caption">
+            <h1>Devices Back in Action</h1>
+            <p>Fast and Reliable Repair for your devices and accessories.</p>
+            <a [routerLink]="['/choose-device-modal']">
+            <button class=" body-bold submit-btn">
+                Book Services Now
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </button>        
+          </a>
+
+    
+
+        </div>
+    </div>
+    
+
+    <div class="services">
+        <div *ngFor="let service of services" class="service-section">
+            <div class="service-content" [ngClass]="{'inshop-content': service.title === 'In-Shop Repair Service'}">
+                <h2>{{ service.title }}</h2>
+                <p class="headline-regular">{{ service.description }}</p>
+
+                <div *ngFor="let highlight of service.highlights" class="highlight-box">
+                    <i class="fa-solid" [ngClass]="highlight.icon"></i>
+                    <div class="highlight-content">
+                        <h3>{{ highlight.title }}</h3>
+                        <div class="body-regular">{{ highlight.description }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-img" [ngClass]="{'inshop-img': service.title === 'In-Shop Repair Service'}">
+                <img [src]="service.image" [alt]="service.imageAlt">
+            </div>
+        </div>
+
+    </div>
+
+
+      <div class="container">
+
+         <!-- Row 1: Text, Image, Text -->
+
+        <div class="box text-box">
+          <h3>Customer Support</h3>
+          <p>Our friendly customer support team is always here to help, from scheduling your repair to answering any questions.</p>
+        </div>
+        <div class="box">
+          <img src="images/quality-service.jpg" alt="Service Image 3">
+        </div>
+        <div class="box text-box">
+          <h3>Flexible Option</h3>
+          <p>Whether you choose doorstep service or prefer to visit our shop, we tailor our services to fit your needs.</p>
+        </div>
+
+        <!-- Row 2: Image, Text, Image -->
+
+        <div class="box">
+          <img src="images/customer-care.jpg" alt="Service Image 1">
+        </div>
+        <div class="box text-box">
+          <h3>Quality Service</h3>
+          <p>We use only high-quality parts and offer warranties on our repairs to ensure your satisfaction.</p>
+        </div>
+        <div class="box">
+          <img src="images/flexible-service.jpg" alt="Service Image 2">
+        </div>
+    
+
+      
+      </div>
+</div>

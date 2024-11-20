@@ -1,0 +1,101 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 14 Plus",
+      "slug": "iphone-14-plus",
+      "description": "Latest Apple iPhone with A15 chip",
+      "seo_title": "Buy iPhone 14 Plus",
+      "seo_description": "Get the latest iPhone 14 Plus now.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "iPhone 14 Plus",
+      "parent": 0
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S22",
+      "slug": "samsung-galaxy-s22",
+      "description": "Latest Samsung Galaxy with Exynos processor",
+      "seo_title": "Buy Samsung Galaxy S22",
+      "seo_description": "Explore the power of Samsung Galaxy S22.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Samsung Galaxy S22",
+      "parent": 0
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel 7 Pro",
+      "slug": "google-pixel-7-pro",
+      "description": "Flagship Google phone with Tensor G2 chip",
+      "seo_title": "Buy Google Pixel 7 Pro",
+      "seo_description": "Experience the best of Google with Pixel 7 Pro.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Google Pixel 7 Pro",
+      "parent": 0
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 11",
+      "slug": "oneplus-11",
+      "description": "Powerful OnePlus phone with Snapdragon 8 Gen 2",
+      "seo_title": "Buy OnePlus 11",
+      "seo_description": "Unleash the power of OnePlus 11.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "OnePlus 11",
+      "parent": 0
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi 13 Pro",
+      "slug": "xiaomi-13-pro",
+      "description": "High-performance Xiaomi with Snapdragon 8 Gen 2",
+      "seo_title": "Buy Xiaomi 13 Pro",
+      "seo_description": "Discover the latest Xiaomi 13 Pro.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Xiaomi 13 Pro",
+      "parent": 0
+    },
+    {
+      "id": 6,
+      "name": "Oppo Find X6 Pro",
+      "slug": "oppo-find-x6-pro",
+      "description": "Oppo flagship with premium camera system",
+      "seo_title": "Buy Oppo Find X6 Pro",
+      "seo_description": "Explore the Oppo Find X6 Pro's premium features.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Oppo Find X6 Pro",
+      "parent": 0
+    },
+    {
+      "id": 7,
+      "name": "Asus ROG Phone 7",
+      "slug": "asus-rog-phone-7",
+      "description": "Gaming phone with Snapdragon 8 Gen 2 and high refresh rate",
+      "seo_title": "Buy Asus ROG Phone 7",
+      "seo_description": "Take gaming to the next level with Asus ROG Phone 7.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Asus ROG Phone 7",
+      "parent": 0
+    },
+    {
+      "id": 8,
+      "name": "Vivo X90 Pro",
+      "slug": "vivo-x90-pro",
+      "description": "Flagship Vivo phone with Zeiss optics",
+      "seo_title": "Buy Vivo X90 Pro",
+      "seo_description": "Capture stunning photos with the Vivo X90 Pro.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Vivo X90 Pro",
+      "parent": 0
+    },
+    {
+      "id": 9,
+      "name": "Realme GT Neo 5",
+      "slug": "realme-gt-neo-5",
+      "description": "Fast-charging Realme with Dimensity 8200",
+      "seo_title": "Buy Realme GT Neo 5",
+      "seo_description": "Experience speed with Realme GT Neo 5.",
+      "thumbnail": "images/iphone.png",
+      "thumbnail_alt_text": "Realme GT Neo 5",
+      "parent": 0
+    }
+]

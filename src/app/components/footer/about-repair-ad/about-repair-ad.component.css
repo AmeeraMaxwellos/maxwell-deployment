@@ -1,0 +1,39 @@
+
+.about-repair-ad-container {
+    position: relative;
+    width: 100%;
+    
+}
+
+.about-repair-ad-container img {
+    width: 100%;
+    height: 80vh;
+    height: 500px;
+    border-radius: var(--main-border-radius);
+    opacity: 0.9;
+}
+
+.repair-ad-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    border-radius: var(--main-border-radius);
+    width: 100%;
+}
+
+
+.repair-ad-content h1 {
+    margin-bottom: 20px;
+}
+
+.repair-ad-content p {
+    margin: 0 80px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+

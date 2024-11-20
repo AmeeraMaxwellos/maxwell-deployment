@@ -1,0 +1,26 @@
+.legal-policy-wrapper{
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+    gap: 5%;
+
+  }
+  .sidebar {
+    width: 20%;
+  }
+
+  .policy-content{
+      width: 75%;
+
+  }
+  
+.content {
+  margin-top: 10px;
+}
+
+h2 {
+  margin:0;
+}
+
+
+
+  

@@ -1,0 +1,22 @@
+<div class="card-container">
+    <div *ngFor="let product of products" class="card">
+        <img [src]="product.image" alt="product.title" class="card-image">
+        <div class="card-body">
+          <h3 class="card-title headline-light">{{product.title}}</h3>
+
+          <div class="card-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="reviews">({{product.reviews}} reviews)</span>
+          </div>
+
+          <div class="card-amount-details">
+            <h3 class="discounted-price">QR {{product.discountedPrice}}</h3>
+            <div class="card-price">
+              <span class="original-price headline-regular">QR {{product.originalPrice}}</span>
+              <span class="card-discount">{{ product.discountPercentage }}% off</span>
+            </div>
+          </div>
+          
+        </div>
+    </div> 
+</div>

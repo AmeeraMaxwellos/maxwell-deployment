@@ -1,0 +1,59 @@
+.add-new-address-container {
+    margin-top: var(--horizontal-gap-top);
+    box-sizing: border-box;
+  }
+  
+.add-new-address-box{ 
+  box-shadow: var(--box-shadow);
+  padding: var(--box-padding);
+  border-radius: 10px;
+  border: var(--horizontal-border);
+  position: relative;
+}
+
+.add-new-address-box h4{
+  margin-bottom: 30px;
+  /* text-align: center; */
+  color: var(--primary-surface-default);
+
+}
+
+  .form-group {
+    margin-bottom: 15px;
+    gap: 50px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 350px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: var(--horizontal-border);
+    font-size: 16px;
+
+  }
+  .street-address{
+    width: 100%;
+
+  }
+
+  .address-type{
+    gap: 40px;
+    margin-top: 10px;
+  }
+
+  .street-address input[type="text"] {
+    width: 100%; 
+  }
+
+  

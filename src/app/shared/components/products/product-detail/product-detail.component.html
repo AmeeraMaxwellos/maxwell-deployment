@@ -1,0 +1,122 @@
+<div *ngIf="productDetails" class="product-detail-wrapper">
+  <div class="product-description">
+    <div class="image-container">
+      <div class="thumb-images">
+        <div *ngFor="let images of productImages; let i = index">
+          <img
+            [src]="prependUrl(images)"
+            [class.selected]="i === selectedImageIndex"
+            (click)="onImageSelect(i)"
+            alt="Product Thumbnail {{ i + 1 }}"
+          />
+        </div>
+      </div>
+
+      <div class="main-prod-image">
+        <div class="user-actions">
+          <div class="card-wishlist">
+            <button
+              class="user-action-btn wishlist-btn"
+              (click)="toggleWishlist()"
+            >
+              <i
+                class="fa-solid fa-heart custom-icon"
+                [class.active]="isWishlisted"
+              ></i>
+            </button>
+          </div>
+
+          <div class="card-wishlist">
+            <button class="user-action-btn share-btn">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          *ngIf="productImages && productImages.length > 0"
+          class="main-image-div"
+        >
+          <img
+            [src]="prependUrl(productImages[selectedImageIndex])"
+            alt="Main Product Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="productDetails?.description" class="product-details">
+      <h3>Product Details</h3>
+      <div class="body-regular">{{ productDetails.description }}</div>
+    </div>
+
+    <div *ngIf="!!specification" class="specifications">
+      <h3>Specifications</h3>
+      <div class="body-regular" [innerHTML]="specification"></div>
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h3>{{ selectedVariant.title }}</h3>
+    <div class="price">
+      <h3>QR {{ selectedVariant.selling_price }}</h3>
+      <span class="original-price">QR {{ selectedVariant.maximum_price }}</span>
+      <span class="discount"
+        >{{
+          calculateDiscount(
+            selectedVariant.maximum_price,
+            selectedVariant.selling_price
+          )
+        }}% Off</span
+      >
+    </div>
+
+    <div *ngFor="let option of productDetails.options" class="product-options">
+      <div *ngIf="option.title === 'Color'">
+        <h4>Color</h4>
+        <div class="colors">
+          <span
+            *ngFor="let value of getOptions().get(option.id)"
+            [ngStyle]="{
+              'background-color': getFormattedColorCode(value.code)
+            }"
+            class="color"
+            [ngClass]="{'selected-color': selectedOptions['option'] === option.id && selectedOptions['value'] === value.value}"
+            (click)="onOptionSelect('Color', value.value, option.id)"
+          >
+          </span>
+        </div>
+      </div>
+    
+      <div *ngIf="option.title === 'Storage'">
+        <h4>Storage</h4>
+        <button
+          *ngFor="let value of getOptions().get(option.id)"
+          (click)="onOptionSelect('Storage', value.value, option.id)"
+          class="storage-btn body-bold me-2"
+          [ngClass]="{'selected-storage': selectedOptions['option'] === option.id && selectedOptions['value'] === value.value}"
+        >
+          {{ value.value }}
+        </button>
+      </div>
+    </div>
+    
+
+    <div class="product-actions mt-4">
+      <div class="quantity-selector">
+        <button class="quantity-btn submit-btn me-2" id="decrease">-</button>
+        <input type="text" id="quantity" value="1" />
+        <button class="quantity-btn submit-btn ms-2" id="increase">+</button>
+      </div>
+
+      <div class="buyer-confirmation">
+        <button class="body-bold submit-btn">
+          <i class="fa-solid fa-boxes-packing custom-icon"></i>Buy Now
+        </button>
+
+        <button class="body-bold submit-btn">
+          <i class="fa-solid fa-cart-plus custom-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

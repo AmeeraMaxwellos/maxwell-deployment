@@ -1,0 +1,39 @@
+
+<div class="ordered-item-container">
+    <p><span>Order History ></span> 234987651 </p>
+
+    <app-product-preview [items]="orders[0].items" [buttonName]="btnName" [buttonIcon]="btnIcon"></app-product-preview>
+    <div class="order-item-tracker">
+  
+      <div class="order-actions">
+        <div class="delivery-action">
+          <p class="estimated-delivery body-regular">Estimated Delivery :</p>
+          <p class="delivery-date body-bold">{{ orders[0].items[0].deliveryDate }}</p>
+        </div>
+  
+        <div class="user-action">
+            <button>
+                <p class="body-regular"><a href="/order-cancellation">Cancel this item</a> <i class="fa-solid fa-ban"></i> </p>
+            </button>
+            
+            <button>
+                <p class="body-regular">Contact us <i class="fa-solid fa-comment-dots"></i></p>
+            </button>
+
+        </div>
+      </div>
+  
+      <div class="progress-bar-container">
+        <div class="progress-bar" [style.width]="getProgressBarWidth()"></div>
+      </div>
+  
+      <div class="stages">
+        <span *ngFor="let stage of stages" 
+              class="stage" 
+              [ngClass]="{ 'completed': isStageCompleted(stage), 'active': isStageActive(stage) }">
+          {{ stage }}
+        </span>
+      </div>
+    </div>
+  </div>
+  

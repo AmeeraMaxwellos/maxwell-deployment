@@ -1,0 +1,36 @@
+<div class="address-details">
+    <h3>Manage Address</h3>
+
+    <div class="address-container">
+
+          <div class="card add-address">
+            <a href="/add-new-address">
+                <i class="fa-solid fa-square-plus"></i> 
+                <p>Add Address</p>
+            </a>
+          </div>
+      
+          <div *ngFor="let card of cards" class="card">
+            <div class="card-header" [ngClass]="card.type.toLowerCase()">
+              {{ card.type }}
+            </div>
+            <div class="card-body">
+              <h4 class="headline-bold">{{ card.name }}</h4>
+              <p class="subtitle-regular">
+                <span>{{ card.street }}</span>, <span>{{ card.zone }}</span>
+              </p>
+              <p class="subtitle-regular">{{ card.building }}</p>
+              <p class="subtitle-regular">{{ card.area }}</p>
+              <p>{{ card.phone }}</p>
+            </div>
+            <div class="card-footer">
+              <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+              <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+          </div>
+
+    </div>
+
+
+
+</div>

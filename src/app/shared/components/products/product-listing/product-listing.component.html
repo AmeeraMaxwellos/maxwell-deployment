@@ -1,0 +1,14 @@
+<div class="product-listing-container">
+    <!-- Filter section on the left -->
+    <div *ngIf="filters" class="filters-section">
+      <app-product-filter [filters]="filters" [totalProducts]="totalProducts"></app-product-filter>
+    </div>
+  
+    <!-- Products display on the right -->
+    <section class="products-section">
+      <div class="card-container">
+        <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+      </div>
+    </section>
+  </div>
+  

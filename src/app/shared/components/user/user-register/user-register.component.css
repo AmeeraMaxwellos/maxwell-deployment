@@ -1,0 +1,134 @@
+.login-box {
+  background-color: #fff;
+  padding: var(--box-padding);
+  border-radius: var(--main-border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 30%;
+  border: var(--horizontal-border);
+  box-shadow: var(--box-shadow);
+}
+
+h2 {
+  margin: 0;
+}
+
+.input-group {
+  margin-top: var(--form-items-margin-top-or-bottom);
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.input-group div i {
+  cursor: pointer;
+}
+
+.input-group div i:hover {
+  color: var(--primary-surface-default);
+}
+
+
+
+.password-container {
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+.forgot-password-container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: var(--fore-ground-primary);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: var(--form-items-margin-top-or-bottom);
+}
+
+.social-login {
+  margin-top: var(--form-items-margin-top-or-bottom);
+  text-align: center;
+
+}
+
+.social-login p {
+  margin-bottom: var(--form-items-margin-top-or-bottom);
+  /* text-align: center; */
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: var(--form-items-margin-top-or-bottom);
+}
+
+.social-icons img {
+  width: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: var(--horizontal-border);
+  border-radius: 8px;
+}
+
+.signup-text {
+  margin-top: var(--form-items-margin-top-or-bottom);
+  text-align: center;
+}
+
+.signup-text a {
+  color: var(--fore-ground-primary);
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  padding-left: 12px;
+  font-size: 13px;
+  padding-top: 6px;
+}
+
+.error-text {
+  color: red;
+  font-weight: 700;
+  padding-top: 16px;
+  text-align: center;
+}

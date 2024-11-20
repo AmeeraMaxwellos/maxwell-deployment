@@ -1,0 +1,16 @@
+.cart-wrapper {
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.product-list {
+    flex: 2;
+}
+
+.price-details {
+    flex: 1;
+}
+

@@ -1,0 +1,14 @@
+<div class="tel-input-container">
+    <div class="country-selector" (click)="toggleDropdown()">
+        <img [src]="selectedCountry.flag" [alt]="selectedCountry.name" class="flag-icon">
+        {{selectedCountry.dialCode}}
+        <div *ngIf="isOpen" class="dropdown-menu">
+            <div class="flag-code-container" *ngFor="let country of countries" (click)="selectCountry(country)">
+                <img [src]="country.flag" [alt]="country.name" class="flag-icon">
+                <span class="dial-code">{{country.dialCode}}</span>
+            </div>
+        </div>
+    </div>
+    <input type="tel" [(ngModel)]="phoneNumber" placeholder="Enter phone number" class="phone-input">
+</div>
+

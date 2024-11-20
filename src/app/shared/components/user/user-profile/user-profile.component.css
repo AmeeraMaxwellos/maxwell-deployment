@@ -1,0 +1,26 @@
+.user-profile-wrapper{
+    /* margin-top:var(--horizontal-gap-top) ; */
+    background-color: var(--secondary-background);
+    padding: 10px;
+}
+
+.user-profile-box{
+    display: flex;
+    margin: var(--user-container-margin);
+    justify-content: center;
+    background-color: white;
+    border-radius: var(--main-border-radius);
+    padding: var(--box-padding);
+    gap: 5%;
+
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.profile-data {
+    width: 70%;
+
+}
+

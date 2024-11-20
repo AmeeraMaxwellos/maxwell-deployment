@@ -1,0 +1,40 @@
+
+
+.service-details div {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.service-details h3 {
+    margin-bottom: 20px;
+
+}
+
+
+.service-details i {
+    font-size: 80px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+h4{
+    color: var(--primary-surface-default);
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+
+}

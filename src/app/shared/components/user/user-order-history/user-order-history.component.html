@@ -1,0 +1,66 @@
+<div class="order-container">
+  <h3>Your Orders</h3>
+
+  <div class="order-history-category">
+    <div class="btn-main-bg">
+      <button
+        class="body-regular"
+        [ngClass]="{ active: isCategoryActive('in-progress') }"
+        (click)="filterOrders('in-progress')"
+      >
+        In-progress
+      </button>
+      <button
+        class="body-regular"
+        [ngClass]="{ active: isCategoryActive('completed') }"
+        (click)="filterOrders('completed')"
+      >
+        Completed
+      </button>
+      <button
+        class="body-regular"
+        [ngClass]="{ active: isCategoryActive('cancelled') }"
+        (click)="filterOrders('cancelled')"
+      >
+        Cancelled
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <select class="dropdown-select body-regular" (change)="onDateRangeChange($event)">
+        <option value="select-date" selected>Select Date</option> <!-- Default option -->
+        <option value="1-month">Last 1 Month</option>
+        <option value="3-month">Last 3 Month</option>
+        <option value="6-month">Last 6 Month</option>
+        <option value="1-year">Last 1 Year</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Loop through filtered orders -->
+  <div *ngFor="let order of filteredOrders" class="order">
+    <div class="order-data">
+      <div class="order-detail">
+        <span class="body-regular">Order number</span>
+        <p class="subtitle-bold">#{{ order.orderNumber }}</p>
+      </div>
+      <div class="order-detail">
+        <span class="body-regular">Date placed</span>
+        <p class="subtitle-bold">{{ order.datePlaced }}</p>
+      </div>
+      <div class="order-detail">
+        <span class="body-regular">Total amount</span>
+        <p class="subtitle-bold">₹{{ order.totalAmount }}</p>
+      </div>
+    </div>
+
+    <!-- Loop through items within each order -->
+    <app-product-preview
+      [items]="order.items"
+      [buttonName]="btnName"
+      [isCancelled]="isCancelled"
+      [buttonIcon]="btnIcon"
+    ></app-product-preview>
+  </div>
+</div>

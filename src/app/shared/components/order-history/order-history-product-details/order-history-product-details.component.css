@@ -1,0 +1,118 @@
+
+
+.order-item-tracker {
+    padding: 20px;
+    border-radius: var(--main-border-radius);
+    /* box-shadow: var(--box-shadow); */
+    text-align: center;
+    /* margin-top: var(--horizontal-gap-top); */
+}
+
+.estimated-delivery {
+    margin-bottom: 10px;
+  
+}
+
+.order-actions{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+
+
+}
+
+.delivery-action,.user-action{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+
+}
+
+.user-action .fa-ban{
+    color: var(--error-surface-default);
+
+}
+
+.user-action .fa-comment-dots{
+    color: var(--primary-surface-default);
+}
+
+.delivery-date{
+    color: var(--primary-surface-darker);
+}
+
+.user-action i{
+    padding: 5px;
+
+}
+
+.user-action button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.progress-bar-container {
+    background-color: var(--greyscale-text-negative);
+    border-radius: var(--main-border-radius);
+    height: 8px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: var(--primary-surface-default);
+    height: 100%;
+    border-radius: var(--main-border-radius);
+    width: 40%; 
+    transition: width 0.3s;
+}
+
+.stages {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -15px; 
+}
+
+.stage {
+    flex: 1;
+    color: var(--greyscale-text-subtile);
+    text-align: right;
+    padding: 10px;
+    position: relative;
+}
+
+.stage::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--greyscale-text-negative);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.stage.completed::after, .stage.active::after {
+    background-color: var(--primary-surface-default);
+}
+
+.stage.active {
+    color: var(--primary-surface-default);
+    font-weight: bold;
+}
+
+.stage.completed {
+    color: var(--primary-surface-darker);
+}
+
+
+p span{
+    color: var(--greyscale-text-disabled);
+}

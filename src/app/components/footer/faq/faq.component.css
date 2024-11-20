@@ -1,0 +1,17 @@
+.faq-wrapper{
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+    gap: 5%;
+
+  }
+  .sidebar {
+    width: 20%;
+  }
+
+  .faq-questions-content{
+      width: 75%;
+
+  }
+  
+
+  

@@ -1,0 +1,89 @@
+
+.order-details-wrapper {
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+   
+}
+.confirmation-message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: var(--horizontal-border);
+    line-height: 2.3rem;
+}
+
+.confirmation-message h3 {
+    color: var(--primary-surface-default);
+    margin: 0;
+    padding-bottom: 10px;
+
+}
+
+.confirmation-message h5 {
+    color: var(--secondary-surface-default);
+    margin: 0;
+}
+
+.confirmation-message p {
+    margin: 5px 0;
+    color: var(--greyscale-text-subtile);
+}
+
+.ordered-products{
+    margin-bottom: 20px;
+}
+
+
+.billing-details{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--secondary-background);
+    padding: var(--main-container-padding); 
+    border-radius: var(--main-border-radius);
+
+}
+
+.customer-details{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    gap: 20px;
+    padding-top: 10px;
+
+}
+
+.customer-details h4{
+    margin-bottom: 10px;
+}
+
+.customer-details div{
+    
+    width: 90%;
+}
+
+.payment-info i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--primary-surface-default);
+
+}
+
+.price-summary{
+width: 35%;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.discount-amount {
+    color: var(--greyscale-text-subtile);
+}
+
+.delivery-fee {
+    color: var(--primary-surface-default);
+}

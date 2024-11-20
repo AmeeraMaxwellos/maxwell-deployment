@@ -1,0 +1,33 @@
+@if (authService.currentUserSignal()) {
+ <div class="account-details">
+        <h3>Account Details</h3>
+        <div class="detail-row">
+            <div>
+                <span class="headline-bold">Maxwell User</span><br>
+                <span class="detail-description subtitle-regular">Full Name</span>
+            </div>
+            <a href="#">Edit</a>
+        </div>
+        <div class="detail-row">
+            <div>
+                <span class="headline-bold">+91 9152369636</span><br>
+                <span class="detail-description  subtitle-regular">Mobile Number</span>
+            </div>
+            <a href="#">Edit</a>
+        </div>
+        <div class="detail-row">
+            <div>
+                <span class="headline-bold">{{authService.currentUserSignal()?.email}}</span><br>
+                <span class="detail-description  subtitle-regular">Email ID</span>
+            </div>
+            <a href="#">Edit</a>
+        </div>
+        <div class="detail-row">
+            <div>
+                <span class="headline-bold">****</span><br>
+                <span class="detail-description  subtitle-regular">Password</span>
+            </div>
+            <a href="/forgot-password">Change</a>
+        </div>
+    </div>
+}

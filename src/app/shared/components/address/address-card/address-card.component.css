@@ -1,0 +1,42 @@
+.address-card {
+    border:none;
+    padding: 30px;
+    border-radius: var(--main-border-radius);
+    background-color: var(--secondary-background);
+    position: relative;
+    margin-bottom: var(--horizontal-gap-bottom);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+a i{
+    margin-right: 5px;
+}
+.address-info {
+    display: inline-block;
+}
+
+.name {
+    color: var(--bluescale-text-default);
+}
+
+.label {
+    background-color:var(--secondary-surface-default);
+    padding: 4px 8px;
+    border-radius: var(--sub-border-radius);
+    margin-left: 10px;
+}
+
+.edit-link {
+    color: var(--bluescale-text-default);
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    
+}
+
+
+

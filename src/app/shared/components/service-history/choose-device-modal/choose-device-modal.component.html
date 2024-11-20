@@ -1,0 +1,30 @@
+<div class="main-box-container">
+
+    <div class="modal-content" >
+            <h2>Book a Service</h2>
+          
+
+          <div class="modal-body">
+            <h4>Select Device</h4>
+            <p class="body-regular">
+              Choose your device to get started. We support a wide range of gadgets, from smartphones and laptops to home appliances. Select the device you need help with.
+            </p>
+            <div class="device-grid">
+              <div *ngFor="let device of devices" class="device-item">
+                <img [src]="device.img" [alt]="device.name" />
+                <p>{{ device.name }}</p>
+              </div>
+            </div>
+          </div>
+                      
+        <div class="close-btn-repair">
+            <button type="button" class="btn-close" aria-label="Close">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>    
+        </div>
+
+    </div>
+      
+
+
+</div>

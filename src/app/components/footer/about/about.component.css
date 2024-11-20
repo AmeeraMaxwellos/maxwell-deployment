@@ -1,0 +1,79 @@
+.about-us-wrapper {
+    margin: var(--main-container-margin);
+}
+
+.about-us-content {
+    /* padding: var(--main-container-padding); */
+    padding: 20px 0px ;
+}
+
+.description{
+    width: 50%;
+    text-align: left;
+
+}
+
+.label {
+    background-color: var(--primary-surface-subtle);
+    display: inline-block;
+    padding: 10px;
+    border-radius: var(--main-border-radius );
+    color: var(--primary-text-label);
+
+}
+
+.description h1 {
+    text-align: left;
+    margin: 20px 0;
+}
+
+p {
+    color:var(--greyscale-text-body);
+    text-align: left;
+}
+
+h2 span{
+    color: var(--primary-surface-default);
+}
+
+h4{
+   color:var(--greyscale-text-body);
+   text-align: left;
+}
+
+.values-section {
+    text-align: center;
+}
+
+h1 {
+    color:var(--greyscale-text-body);
+    text-align: center;
+
+}
+
+.subtitle {
+    color:var(--greyscale-text-body);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.trusted-brand-container{
+    margin-top: var(--horizontal-gap-top);  
+}
+
+
+.trusted-brand-container h4{
+    text-align: center;  
+}
+
+.brand-component{
+    margin-top: var(--horizontal-gap-top);  
+
+}
+
+
+.about-repair-container{
+    margin-top: var(--horizontal-gap-top);  
+
+}

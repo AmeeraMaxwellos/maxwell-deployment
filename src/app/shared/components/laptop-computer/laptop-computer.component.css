@@ -1,0 +1,74 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .laptop-computer-container {
+    display: flex;
+    border-radius: var(--main-border-radius);
+    overflow: hidden;
+    border: 1px solid #D9D9D9; /* Border applied to the container */
+  }
+  
+  .main-category {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    border-right: none; /* Removed conflicting borders */
+  }
+  
+  .main-category img {
+    max-width: 80%;
+  }
+  
+  .main-category h3 {
+   margin: 10px 0 10px 0;
+  }
+  
+  .main-category a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .laptop-computer-item-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+  }
+  
+  .lap-computer-item {
+    border-left: 1px solid #D9D9D9;
+    text-align: center;
+  }
+  
+  .lap-computer-item:last-child {
+    border-right: none; 
+  }
+  
+  .item-flex {
+    display: flex;
+    flex: 1;
+  }
+  
+  .item-flex img {
+   margin-right: 10px;
+  }
+  .lap-computer-item h4 {
+    text-align: left;
+    margin: 10px 0 10px 10px;
+  }
+  
+  .lap-computer-item p {
+    color: #555;
+    margin: 0 0 0 10px;
+    text-align: left;
+  }
+  
+
+  .first-row{
+    border-bottom:1px solid #D9D9D9;
+  }

@@ -1,0 +1,85 @@
+
+
+  .otp-box{
+    box-shadow: var(--box-shadow);
+    padding: var(--box-padding);
+    border-radius: 10px;
+    border: var(--horizontal-border);
+  }
+  
+
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: var(--greyscale-text-subtile);
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs input {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .otp-inputs input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .verify-button {
+    width: 100%;
+  }
+  
+  .resend-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .resend-section a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .resend-section a:hover {
+    text-decoration: underline;
+  }
+
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom:var(--margin-content-space);
+}
+
+.back-button i:hover {
+    background-color: #eaeaea;
+
+}
+
+.back-button i {
+    display: inline-block;
+    border: var(--horizontal-border);
+    border-radius: var(--main-border-radius);
+    padding: 8px 10px;
+    font-size: 12px;
+
+
+}

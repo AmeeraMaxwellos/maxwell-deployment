@@ -1,0 +1,27 @@
+
+<div *ngFor="let item of cartItems; let i = index" class="cart-item-container">
+    <div class="item-info">
+        <img [src]="item.imageUrl" [alt]="item.name">
+        <div class="details">
+            <h2 class="body-regular">{{ item.name }}</h2>
+            <h4>₹{{ item.price }}</h4>
+
+            <p>
+                <span class="original-price">₹{{ item.originalPrice }}</span>
+                <span class="discount-percent">{{ item.discountPercent }}% Off</span>
+            </p>
+            <p>Estimated Delivery Date: <span class="date">{{ item.deliveryDate }}</span></p>
+
+            <div class="remove-and-wishlist">
+                <button class="remove-btn body-regular" (click)="removeItem(i)">Remove</button>
+                <div class="vertical-line"></div>
+                <button class="wishlist-btn body-regular" (click)="moveToWishlist(item)">Move to Wishlist</button>
+            </div>
+        </div>
+    </div>
+    <div class="quantity">
+        <button (click)="decrementQuantity(item)">-</button>
+        <input type="number" [value]="item.quantity" min="1" readonly>
+        <button (click)="incrementQuantity(item)">+</button>
+    </div>
+</div>

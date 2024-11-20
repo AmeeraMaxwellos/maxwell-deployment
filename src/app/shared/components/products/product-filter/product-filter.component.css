@@ -1,0 +1,81 @@
+  
+  .filters {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+
+  }
+  
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .clear-all {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .products-found {
+    margin-bottom: 20px;
+  }
+  
+  .price-range {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .price-range span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  #brand-search {
+    /* width: 100%; */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px;
+  }
+
+  .filter-section {
+    margin-bottom: 16px;
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  .range-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+
+  

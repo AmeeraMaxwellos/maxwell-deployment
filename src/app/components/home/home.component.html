@@ -1,0 +1,186 @@
+<div class="home-wrapper">
+
+<!-- Carousel Container -->
+<div class="carousel-container">
+  <div class="carousel-slide" [ngStyle]="{'transform': 'translateX(' + currentSlideIndex * -100 + '%)'}">
+    <div class="carousel-item" *ngFor="let image of images">
+      <img [src]="image" alt="Slide Image">
+    </div>
+  </div>
+  <button class="carousel-button prev" (click)="prevSlide()">&#10094;</button>
+  <button class="carousel-button next" (click)="nextSlide()">&#10095;</button>
+</div>
+<!-- Carousel Container -->
+
+<!-- Features Container -->
+<div class="features-container">
+  <div class="feature">
+    <i class="fas fa-box"></i>
+    <div class="feature-content">
+      <h4>Fast Delivery</h4>
+      <p class="body-regular">Delivery in 24H</p>
+    </div>
+  </div>
+  <div class="feature">
+    <i class="fas fa-trophy"></i>
+    <div class="feature-content">
+      <h4>24 Hours Return</h4>
+      <p class="body-regular">100% money-back guarantee</p>
+    </div>
+  </div>
+  <div class="feature">
+    <i class="fas fa-credit-card"></i>
+    <div class="feature-content">
+      <h4>Secure Payment</h4>
+      <p class="body-regular">Your money is safe</p>
+    </div>
+  </div>
+  <div class="feature">
+    <i class="fas fa-headset"></i>
+    <div class="feature-content">
+      <h4>Support 24/7</h4>
+      <p class="body-regular">Live contact/message</p>
+    </div>
+  </div>
+</div>
+<!-- Features Container -->
+
+<!-- Deals Container -->
+<div class="deals-container">
+  <div class="deal-card">
+    <img src="images/camera.png" alt="Camera" class="deal-image" />
+    <div class="deal-content">
+      <!-- <h3> {{'Best Deals on the Cameras'| uppercase}}</h3> -->
+      <h3> Best Deals on the Cameras</h3>
+
+      <a href="#" class="shop-now">Shop Now <span>&#10095;</span></a>
+    </div>
+  </div>
+
+  <div class="deal-card">
+    <img src="images/mobile.png" alt="Smartphones" class="deal-image" />
+    <div class="deal-content">
+      <h3>Best Deals on Mobiles & Smartphones</h3>
+      <a [routerLink]="['/category/smartphones']" class="shop-now">Shop Now <span>&#10095;</span></a>
+    </div>
+  </div>
+
+  <div class="deal-card">
+    <img src="images/computer.png" alt="Computers" class="deal-image" />
+    <div class="deal-content">
+      <h3>Best Deals on Desktops & Computers</h3>
+      <a href="#" class="shop-now">Shop Now <span>&#10095;</span></a>
+    </div>
+  </div>
+</div>
+<!-- Deals Container -->
+
+
+<!-- card section -->
+<h2 class="heading-margin">Exclusive Offers & Deals</h2>
+<div class="exclusive-offer-card-container">
+  <app-card></app-card>
+</div>
+<!-- card section -->
+
+<!-- Top Categories -->
+<h2 class="heading-margin">Explore Our Top Categories</h2>
+<div class="top-categories-container">
+  <app-topcategory></app-topcategory>
+</div>
+<!-- Top Categories -->
+
+<!-- Shop by brand -->
+<h2 class="heading-margin">Shop by Brands</h2>
+<div class="shop-by-brand-container">
+  <app-brand></app-brand>
+</div>
+<!-- Shop by brand -->
+
+<!-- Laptop & Computer -->
+<div class="laptop-computer-container">
+  <app-laptop-computer></app-laptop-computer>
+</div>
+<!-- Laptop & Computer -->
+
+<!-- card section LAPTOP & COMPUTER-->
+<h2 class="heading-margin">Upto 40% off : Deals on Laptops and Computers</h2>
+<div class="exclusive-offer-card-container">
+  <app-card></app-card>
+</div>
+<!-- card section LAPTOP & COMPUTER-->
+
+
+<!-- Promotion container  LAPTOP & COMPUTER -->
+<div class="single-promotion-container">
+  <app-single-promotion></app-single-promotion>
+</div>
+<!-- Promotion container  LAPTOP & COMPUTER -->
+
+
+<!-- MOBILES & TABLETS -->
+<div class="laptop-computer-container">
+  <app-laptop-computer></app-laptop-computer>
+</div>
+<!-- MOBILES & TABLETS -->
+
+<!-- card section  MOBILES & TABLETS-->
+<h2 class="heading-margin">Upto 30% off : Deals on mobiles and Tablets</h2>
+<div class="exclusive-offer-card-container">
+  <app-card></app-card>
+</div>
+<!-- card section MOBILES & TABLETS -->
+
+<!-- Promotion container  MOBILES & TABLETS -->
+<div class="dual-promotion-container">
+  <app-dual-promotion></app-dual-promotion>
+</div>
+<!-- Promotion container  MOBILES & TABLETS -->
+
+
+<!-- Home Appliances -->
+<div class="laptop-computer-container">
+  <app-laptop-computer></app-laptop-computer>
+</div>
+<!-- Home Appliances -->
+
+<!-- card section  Home Appliances-->
+<h2 class="heading-margin">Upto 60% off : Deals on Home Appliances</h2>
+<div class="exclusive-offer-card-container">
+  <app-card></app-card>
+</div>
+<!-- card section Home Appliances -->
+
+<!-- Promotion container  Home Appliances -->
+<div class="triple-promotion-container">
+  <app-triple-promotion></app-triple-promotion>
+</div>
+<!-- Promotion container  Home Appliances -->
+
+
+<!-- Camera -->
+<div class="laptop-computer-container">
+  <app-laptop-computer></app-laptop-computer>
+</div>
+<!-- Camera -->
+
+<!-- card section  Camera-->
+<h2 class="heading-margin">Exclusive Offers on Cameras</h2>
+<div class="exclusive-offer-card-container">
+  <app-card></app-card>
+</div>
+<!-- card section Camera-->
+
+<!-- Promotion container  Camera -->
+<div class="dual-promotion-container">
+  <app-dual-promotion></app-dual-promotion>
+</div>
+<!-- Promotion container  Camera -->
+
+
+<div class="repair-service-container">
+  <app-home-ad-repair-service></app-home-ad-repair-service>
+</div>
+
+
+</div>

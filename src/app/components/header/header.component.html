@@ -1,0 +1,42 @@
+    
+
+<header>
+    <div class="navbar d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="fullLogoBlack.png" alt="Maxwell OS Logo">
+        </div>
+        <div class="search-bar d-flex align-items-center">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-icons d-flex align-items-center">
+            <a [routerLink]="['/user-profile']" class="wishlist"><i class="fa-regular fa-heart"></i><span class="badge">6</span></a>
+            <a [routerLink]="['/cart']" class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="badge">9</span></a>
+            @if (authService.currentUserSignal() == null) {
+            <a [routerLink]="['/register']" class="account"><i class="fa-regular fa-user cursor-pointer"></i></a>
+            }
+            @if (authService.currentUserSignal()) {
+                <a [routerLink]="['/user-profile']" class="account"><i class="fa-regular fa-user cursor-pointer"></i><span class="account">{{authService.currentUserSignal()?.email}}</span></a>
+                <a (click)="logout()" class="account"><i class="fa-solid fa-power-off cursor-pointer"></i></a>
+            }
+        </div>
+    </div>
+    
+
+    <nav>
+        <ul class="d-flex justify-content-center">
+            <li><a href="#" class="body-bold">New Deals</a></li>
+            <li><a href="#" class="body-bold">Laptops</a></li>
+            <li><a href="#" class="body-bold">Desktops</a></li>
+            <li><a [routerLink]="['category/smartphones']" class="body-bold">Smartphones</a></li>
+            <li><a href="#" class="body-bold">Tablets</a></li>
+            <li><a href="#" class="body-bold">Cameras</a></li>
+            <li><a href="#" class="body-bold">Gaming</a></li>
+            <li><a href="#" class="body-bold">Accesories</a></li>
+            <li><a [routerLink]="['repair-service-homepage']" class="body-bold">Device Services</a></li>
+            <li><a href="#" class="body-bold">Special requirement ?</a></li>
+
+        </ul>
+    </nav>
+</header>
+

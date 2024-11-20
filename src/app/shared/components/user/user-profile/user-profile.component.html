@@ -1,0 +1,54 @@
+<div class="user-profile-wrapper">
+    <div class="user-profile-box">
+      
+      <div class="sidebar">
+        <ul>
+          <li 
+            (click)="setActiveSection('profile'); $event.preventDefault()" 
+            [class.active]="activeSection === 'profile'" 
+            class="headline-regular">
+            <i class="fa-solid fa-user"></i><a href="#">Profile</a>
+          </li>
+          <li 
+            (click)="setActiveSection('orderHistory'); $event.preventDefault()" 
+            [class.active]="activeSection === 'orderHistory'" 
+            class="headline-regular">
+            <i class="fa-solid fa-cart-shopping"></i><a href="#">Order History</a>
+          </li>
+          <li 
+            (click)="setActiveSection('serviceHistory'); $event.preventDefault()" 
+            [class.active]="activeSection === 'serviceHistory'" 
+            class="headline-regular">
+            <i class="fa-solid fa-wrench"></i><a href="#">Service History</a>
+          </li>
+          <li 
+            (click)="setActiveSection('manageAddress');$event.preventDefault()" 
+            [class.active]="activeSection === 'manageAddress'" 
+            class="headline-regular">
+            <i class="fa-solid fa-house-chimney-window"></i><a href="#">Manage Address</a>
+          </li>
+          <li 
+            (click)="setActiveSection('wishlist'); $event.preventDefault()" 
+            [class.active]="activeSection === 'wishlist'" 
+            class="headline-regular">
+            <i class="fa-solid fa-heart"></i><a href="#">Wishlist</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="profile-data">
+        
+        <app-user-profile-data *ngIf="activeSection === 'profile'"></app-user-profile-data>
+        <app-user-address-management *ngIf="activeSection === 'manageAddress'"></app-user-address-management>
+        <app-user-order-history *ngIf="activeSection === 'orderHistory'"></app-user-order-history>
+        <app-order-history-product-details *ngIf="activeSection === 'serviceHistory'"></app-order-history-product-details>
+
+    
+
+      </div>
+
+    </div>
+  </div>
+  
+
+

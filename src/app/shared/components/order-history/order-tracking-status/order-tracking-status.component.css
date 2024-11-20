@@ -1,0 +1,117 @@
+/* .main-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.tracker-box {
+  padding: var(--box-padding );
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: left;
+  position: relative;
+}
+
+.order-tracking {
+  list-style: none;
+  padding: 0;
+}
+
+.order-tracking li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.order-tracking li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.order-tracking li .status p {
+  margin: 10px 0;
+  color: var(--greyscale-text-subtile);
+}
+
+h4{
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+
+.status-tiltle{
+  display: flex;
+  gap: 5px;
+}
+
+.cancelled i{
+  color: var(--error-surface-darker);
+  /* opacity: 0.3; */
+
+}
+
+
+.delivered i{
+  color: var(--primary-surface-darker);
+  /* opacity: 0.3; */
+}
+
+.shipped i{
+  color: var(--primary-surface-default);
+  /* opacity: 0.3; */
+
+}
+
+
+.processed i{
+  color: var(--secondary-surface-darker);
+  /* opacity: 0.3; */
+
+}
+
+.placed i{
+
+  color: var(--secondary-surface-default);
+
+}
+
+
+/* Optional for timeline effect */
+.order-tracking li::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 40px;
+  width: 2px;
+  height: calc(100% - 40px);
+  background-color: #ddd;
+}
+
+.order-tracking li:last-child::before {
+  display: none;
+}
+
+
+.status-tiltle.active i {
+  opacity: 1;
+}
+
+.status-tiltle i {
+  opacity: 0.3;
+}
+
+
+.close-address-form button{
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  color: var(--greyscale-text-caption);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+
+.close-address-form button :hover{
+  color: var(--error-surface-default);
+
+}

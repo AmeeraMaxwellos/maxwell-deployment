@@ -1,0 +1,32 @@
+.confirm-cancel {
+    padding: var(--box-padding);
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    width: 30%;
+    border: var(--horizontal-border);
+}
+
+
+
+.confirm-cancel p , h3 {
+    text-align: center;
+   
+}
+
+
+.image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+

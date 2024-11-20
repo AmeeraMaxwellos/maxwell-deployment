@@ -1,0 +1,44 @@
+
+.content {
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin:0;
+  }
+  
+  
+  .accordion {
+    margin-top: 20px;
+  }
+  
+  .accordion-item {
+    border-bottom: var(--horizontal-border);
+  }
+  
+  .accordion-header {
+    padding:10px;
+  }
+  
+  .accordion-header h2 {
+    margin: 10px 0;
+    color: var(--greyscale-text-subtile);
+    
+  }
+  
+  .accordion-content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content.active {
+    max-height: 100vh;
+    padding: 0 10px;
+  }
+  
+  .accordion-header span {
+    font-size: 25px;
+  }
+  

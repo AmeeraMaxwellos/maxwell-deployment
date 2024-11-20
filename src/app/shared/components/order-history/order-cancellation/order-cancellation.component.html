@@ -1,0 +1,38 @@
+<div class="main-box-container">
+
+            <div class="cancel-card">
+                <p class="body-bold">Cancelling this order will:</p>
+                <ul>
+                    <li class="body-regular">Stop any further processing and shipment.</li>
+                    <li class="body-regular">Initiate the refund process if the payment has already been made.</li>
+                </ul>
+                <div class="image-container">
+                    <img src="images/cart-mobile.png" alt="Product Image">
+
+                </div>
+                <!-- <app-product-preview [items]="orders[0].items" [buttonName]="btnName" [buttonIcon]="btnIcon"></app-product-preview> -->
+
+                <div class="select-container">
+                    <label for="reason">Reason for Cancellation</label>
+                    <select id="reason">
+                        <option value="" disabled selected>Select</option>
+                        <option value="ordered_by_mistake">Ordered by mistake</option>
+                        <option value="found_better_price">Found a better price</option>
+                        <option value="product_not_needed">Product no longer needed</option>
+                        <!-- Add more reasons here -->
+                    </select>
+                </div>
+                <div class="textarea-container">
+                    <label for="additional-reason">Enter Reason</label>
+                    <textarea id="additional-reason" rows="4" placeholder="Enter additional reason here"></textarea>
+                </div>
+                <div class="button-container">
+                    
+                    <a href="//user-profile"><button class="body-bold submit-btn">Back to Orders</button></a>
+
+                    <a href="/order-cancel-confirmation"><button class="body-bold submit-btn">Confirm to Cancel</button></a>
+                </div>
+            </div>
+    
+
+   </div>

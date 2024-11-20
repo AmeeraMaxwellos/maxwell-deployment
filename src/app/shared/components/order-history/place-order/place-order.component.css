@@ -1,0 +1,30 @@
+.place-order-wrapper {
+    margin: var(--main-container-margin);
+    margin-top: var(--horizontal-gap-top);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.select-address{
+    flex: 2;
+
+}
+
+
+.price-details{
+    flex: 1;
+}
+
+
+.secure-payment {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secure-payment p {
+    color: green;
+    font-weight: bold;
+}
+

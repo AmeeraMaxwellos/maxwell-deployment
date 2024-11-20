@@ -1,0 +1,30 @@
+
+.success-box {
+    background-color: white;
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 50px;
+    text-align: center;
+    width: 30%;
+}
+
+.checkmark {
+    font-size: 50px;
+    color: var(--primary-surface-default);
+    margin-bottom: 20px;
+}
+
+.message {
+    color: var(--greyscale-text-subtile);
+}
+
+.success {
+    color: black;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+

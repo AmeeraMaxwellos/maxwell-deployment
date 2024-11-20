@@ -1,0 +1,80 @@
+.address-container{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.address-details h3 {
+    margin-bottom: 20px;
+}
+
+  .card {
+    width: 200px;
+    padding: 20px;
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--box-shadow);
+    position: relative;
+  }
+
+  .add-address {
+    border: var(--dashed-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--greyscale-text-body);
+    box-shadow: none;
+  }
+
+  .add-address i {
+    padding: 10px;
+    font-size: 25px;
+    color: var(--primary-surface-default);
+  }
+
+  .add-address a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--primary-surface-subtle);
+    padding: 5px;
+    border-radius: var(--sub-border-radius);
+    width: 50%;
+    justify-content: space-around;
+
+  }
+
+  .card-header.home {
+    color: var(--primary-surface-default);
+  }
+
+  .card-header.work {
+    color: var(--secondary-surface-default);
+  }
+
+
+  .card-body {
+    color: var(--greyscale-text-body);
+  }
+
+  .card-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-footer a {
+    color: var(--greyscale-text-subtile);
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+
+  }

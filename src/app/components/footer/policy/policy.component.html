@@ -1,0 +1,74 @@
+<div class="legal-policy-wrapper d-flex">
+    <div class="sidebar">
+        <ul>
+            <li class="headline-regular" [ngClass]="{'active': activeTab === 'terms'}" (click)="setActiveTab('terms')">
+                <a href="javascript:void(0);">Terms & Condition</a>
+            </li>
+            <li class="headline-regular" [ngClass]="{'active': activeTab === 'privacy'}"
+                (click)="setActiveTab('privacy')">
+                <a href="javascript:void(0);">Privacy Policy</a>
+            </li>
+            <li class="headline-regular" [ngClass]="{'active': activeTab === 'cookie'}"
+                (click)="setActiveTab('cookie')">
+                <a href="javascript:void(0);">Cookie Policy</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="policy-content">
+        <ng-container *ngIf="activeTab === 'terms'">
+            <div class="content">
+                <h2>Terms & Condition</h2>
+                <p class="body-regular">Welcome to [Your Company Name]. By accessing and using our website, you agree to
+                    comply with and be bound by the following terms and conditions. Please review them carefully. If you
+                    do not agree to these terms and conditions, you should not use our website.</p>
+
+                <p class="headline-bold">Use of Website</p>
+                <p class="body-regular">You agree to use this website for lawful purposes only and in a manner that does
+                    not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the website. You
+                    are prohibited from using the site to post or transmit any unlawful, defamatory, obscene, or
+                    otherwise objectionable material.</p>
+
+                <p class="headline-bold">Intellectual Property</p>
+                <p class="body-regular">All content included on this website, such as text, graphics, logos, images, and
+                    software, is the property of [Your Company Name] or its content suppliers and is protected by
+                    intellectual property laws. You may not reproduce, distribute, or create derivative works from any
+                    content without express written permission from [Your Company Name].</p>
+
+                <p class="headline-bold">Product Information</p>
+                <p class="body-regular">We strive to ensure that the information on our website is accurate and
+                    up-to-date. However, we do not warrant that product descriptions, prices, or other content is
+                    complete, current, or error-free. If a product offered by us is not as described, your sole remedy
+                    is to return it in unused condition.</p>
+
+                <p class="headline-bold">Pricing and Payment</p>
+                <p class="body-regular">All prices are listed in [Currency] and are subject to change without notice. We
+                    accept various payment methods, including credit/debit cards, PayPal, and bank transfers. By placing
+                    an order, you confirm that the payment details provided are valid and correct.</p>
+
+                <p class="headline-bold">Shipping and Delivery</p>
+                <p class="body-regular">We aim to process and ship orders as quickly as possible. Delivery times and
+                    costs vary depending on the shipping method and destination. We are not responsible for delays
+                    caused by courier services or customs. For more information, please refer to our Shipping Policy.
+                </p>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="activeTab === 'privacy'">
+            <div class="content">
+                <h2>Privacy policy</h2>
+            </div>
+        </ng-container>
+
+
+        <ng-container *ngIf="activeTab === 'cookie'">
+            <div class="content">
+                <h2>Cookie policy</h2>
+            </div>
+
+
+        </ng-container>
+
+
+    </div>
+</div>

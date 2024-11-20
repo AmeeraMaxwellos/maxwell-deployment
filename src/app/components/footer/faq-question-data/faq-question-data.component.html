@@ -1,0 +1,16 @@
+
+<div class="content">
+  <h3>Frequently Asked Questions</h3>
+  <div class="accordion">
+    <!-- Loop through the filtered accordionData that will be passed from the parent component -->
+    <div class="accordion-item" *ngFor="let item of getFilteredQuestions(); let i = index">
+      <div class="accordion-header d-flex justify-content-between align-items-center cursor-pointer" (click)="toggleAccordion(i)">
+        <h2 class="headline-bold">{{ item.title }}</h2>
+        <span>{{ activeIndex === i ? '-' : '+' }}</span>
+      </div>
+      <div class="accordion-content body-regular" [ngClass]="{ 'active': activeIndex === i }">
+        <p>{{ item.content }}</p>
+      </div>
+    </div>
+  </div>
+</div>

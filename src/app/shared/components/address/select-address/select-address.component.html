@@ -1,0 +1,40 @@
+
+<div class="select-address-container">
+
+    <div class="progress-bar">
+        <p class="headline-bold"><i class="fa-solid fa-check-to-slot"></i>Login</p>
+        <p class="headline-bold">----</p>
+        <p class="headline-bold"><i class="fa-solid fa-check-to-slot"></i>Address</p>
+        <p class="headline-bold">----</p>
+        <p class="headline-bold"><i class="fa-solid fa-check-to-slot"></i>Payment</p>
+    </div>
+
+    <div class="delivery-options">
+        <button class="delivery-btn body-bold" [class.active]="isHomeDelivery()" (click)="selectDeliveryType('home')">
+            <i class="fa-solid fa-truck"></i>
+            Home Delivery
+        </button>
+        <button class="delivery-btn body-bold" [class.active]="isPickupFromShop()" (click)="selectDeliveryType('pickup')">
+            <i class="fa-solid fa-shop"></i>
+            Pickup from Shop
+        </button>
+    </div>
+
+    <div class="address-section">
+        <h2>Select Address</h2>
+
+        <!-- Show 'Add New Address' only for Home Delivery -->
+        <div class="add-new-address" *ngIf="isHomeDelivery()">
+            <a href="/add-new-address"> 
+                <button class="add-address">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span class="body-regular">Add New Address</span>
+                </button>
+            </a>
+        </div>
+
+        <!-- Display address cards and pass addresses based on the selected type -->
+        <app-address-card [addresses]="getAddresses()" [showEdit]="isHomeDelivery()"></app-address-card>
+    </div>
+</div>
+

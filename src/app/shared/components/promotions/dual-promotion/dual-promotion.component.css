@@ -1,0 +1,14 @@
+.dual-promotion-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.dual-promotion-container img {
+    width: 50%;
+    height: 300px;
+    border-radius: var(--main-border-radius);
+
+
+}

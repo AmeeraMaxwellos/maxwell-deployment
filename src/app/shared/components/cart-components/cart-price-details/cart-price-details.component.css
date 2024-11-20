@@ -1,0 +1,77 @@
+.cart-price-container {
+    background-color: var(--primary-surface-subtle);
+    padding: var(--main-container-padding);
+    border-radius: var(--main-border-radius);
+    /* flex: 1; */
+}
+
+
+.apply-coupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apply-coupon p {
+    margin: 0;
+}
+
+.coupon-status,
+.coupon-code {
+    padding: 10px 20px;
+    border-radius: var(--sub-border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.coupon-code {
+    background-color: white;
+
+}
+
+.coupon-status {
+    background-color: var(--secondary-surface-default);
+
+}
+
+.coupon-code i {
+    color: var(--success-border-default);
+
+}
+
+.remove-coupon {
+    background-color: transparent;
+    border: none;
+    color: var(--error-surface-default);
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.price-distribution {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--main-border-radius);
+
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-amount {
+    color: var(--greyscale-text-subtile);
+}
+
+.delivery-fee {
+    color: var(--primary-surface-default);
+}
+
+.order-btn {
+    width: 100%;
+}
+
+

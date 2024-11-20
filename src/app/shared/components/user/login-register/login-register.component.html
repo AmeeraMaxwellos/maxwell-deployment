@@ -1,0 +1,77 @@
+<div class="main-box-container">
+    <div class="login-box">
+        <h2>Welcome Back</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div class="input-group">
+
+                <label class="body-bold" for="email">Email</label>
+                <div>
+                    <input class="subtitle-regular" type="email" id="email" formControlName="email"
+                        placeholder="Enter your email" />
+                </div>
+                <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error-message">
+                    <span *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</span>
+                    <span *ngIf="loginForm.get('email')?.errors?.['email']">Please enter a valid email</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="body-bold" for="email">Password</label>
+              
+                <div class="password-container">
+                    <div class="input-wrapper">
+                      <input
+                        [type]="isPasswordVisible ? 'text' : 'password'"
+                        id="password"
+                        formControlName="password"
+                        class="subtitle-regular password-input"
+                        placeholder="Enter your password"
+                      />
+                      <i
+                        id="togglePassword"
+                        [ngClass]="
+                          isPasswordVisible
+                            ? 'fa-regular fa-eye-slash'
+                            : 'fa-regular fa-eye'
+                        "
+                        (click)="togglePasswordVisibility()"
+                      ></i>
+                    </div>
+                  </div>
+
+
+                <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                    class="error-message">
+                    <span *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</span>
+                    <span *ngIf="loginForm.get('password')?.errors?.['minlength']">Password must be at least 6
+                        characters</span>
+                </div>
+            </div>
+
+            <div class="forgot-password-container">
+                <a href="/forgot-password" class="forgot-password">Forgot Password ?</a>
+            </div>
+
+                <button type="submit" class="login-btn submit-btn headline-bold"
+                    [disabled]="loginForm.invalid">Login
+                </button>
+                <div class="error-text" *ngIf="errorMessage">{{errorMessage}}</div>
+
+<!-- 
+            <div class="social-login">
+                <p>Or Login With</p>
+                <div class="social-icons">
+                    <img src="images/google.png" alt="Google" />
+                    <img src="images/facebook.png" alt="Facebook" />
+                    <img src="images/apple.png" alt="Apple" />
+                </div>
+            </div> -->
+
+            <p class="signup-text">
+                <span class="body-regular">Don’t have an account?</span> 
+                <a href="/register">Signup</a>
+            </p>
+        </form>
+    </div>
+</div>

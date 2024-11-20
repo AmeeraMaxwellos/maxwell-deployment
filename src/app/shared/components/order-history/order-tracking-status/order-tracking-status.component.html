@@ -1,0 +1,24 @@
+<div class="main-box-container">
+    <div class="tracker-box">
+      <ul class="order-tracking">
+
+          <li *ngFor="let status of orderStatuses" [ngClass]="status.status">
+            <div class="status-tiltle status" [ngClass]="{ 'active': isStatusActive(status.status) }">
+              <i [class]="status.icon" [style.opacity]="isStatusActive(status.status) ? '1' : '0.3'"></i>
+              <div>
+                <h4>{{ status.title }}</h4>
+                <p>{{ status.description }}</p>
+                <p>{{ status.date }}</p>
+              </div>
+            </div>
+          </li>
+
+      </ul>
+
+      <div class="close-button">
+          <a href="/user-profile"><i class="fa-solid fa-circle-xmark"></i></a>
+      </div>
+
+    </div>
+  </div>
+  

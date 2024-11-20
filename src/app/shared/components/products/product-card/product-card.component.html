@@ -1,0 +1,64 @@
+<!-- product-card.component.html -->
+
+  <div class="card-container">
+
+      
+      <div class="card">
+        
+        <div class="card-wishlist">
+          <button class="wishlist-btn" (click)="toggleWishlist()">
+            <i class="fa-solid fa-heart custom-icon" [class.active]="isWishlisted"></i>
+          </button>
+        </div>
+
+
+        <a [routerLink]="['/category/smartphones/iphone', product.id]" aria-label="Click card for more product details">
+
+          <div class="img-container">
+
+          <div class="card-image-container">
+            <img [src]="prependUrl(product.thumbnail)" [alt]="product.thumbnail_alt_text" class="card-image" />
+          </div>
+         </div>
+
+
+        <div class="card-content">
+          <div class="product-info">
+            <h4 class="headline-bold card-title">{{ product.title }}</h4>
+            
+            <div class="rating-section">
+              <div class="stars">
+                <i class="fas fa-star star-icon" *ngFor="let star of [1,2,3,4,5]"></i>
+              </div>
+              <span class="review-count">({{ product.reviews }} reviews)</span>
+            </div>
+          </div>
+    
+          <div class="price-action-section">
+            <div class="price-section">
+              <div class="prices">
+                <span class="body-bold original-price">QR {{ product.variants[0].maximum_price }}</span>
+                <span class="discount-tag ">{{ product.discount }}% off</span>
+              </div>
+              <h4 class="headline-bold discounted-price">QR {{ product.variants[0].selling_price }}</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </a>
+
+      <div class="cart-btn-div">
+        <a [routerLink]="['/product-detail']" aria-label="Add product to shopping cart">
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+
+      </a>
+      </div>
+
+      </div>
+
+
+  </div>
+  
