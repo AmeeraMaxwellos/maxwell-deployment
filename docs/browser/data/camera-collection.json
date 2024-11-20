@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "name": "Canon EOS R5",
+      "slug": "canon-eos-r5",
+      "description": "Canon's high-resolution mirrorless camera",
+      "seo_title": "Buy Canon EOS R5",
+      "seo_description": "Capture stunning images with Canon EOS R5.",
+      "thumbnail": "images/canon-r5.png",
+      "thumbnail_alt_text": "Canon EOS R5",
+      "parent": 0
+    },
+    {
+      "id": 2,
+      "name": "Sony Alpha 7 IV",
+      "slug": "sony-alpha-7-iv",
+      "description": "Sony's full-frame mirrorless camera with advanced autofocus",
+      "seo_title": "Buy Sony Alpha 7 IV",
+      "seo_description": "Explore creativity with Sony Alpha 7 IV.",
+      "thumbnail": "images/sony-alpha-7.png",
+      "thumbnail_alt_text": "Sony Alpha 7 IV",
+      "parent": 0
+    },
+    {
+      "id": 3,
+      "name": "Nikon Z9",
+      "slug": "nikon-z9",
+      "description": "Nikon's flagship mirrorless camera with 8K video",
+      "seo_title": "Buy Nikon Z9",
+      "seo_description": "Experience the power of Nikon Z9.",
+      "thumbnail": "images/nikon-z9.png",
+      "thumbnail_alt_text": "Nikon Z9",
+      "parent": 0
+    },
+    {
+      "id": 4,
+      "name": "Fujifilm X-T5",
+      "slug": "fujifilm-x-t5",
+      "description": "Fujifilm's APS-C mirrorless with vintage design",
+      "seo_title": "Buy Fujifilm X-T5",
+      "seo_description": "Discover the charm of Fujifilm X-T5.",
+      "thumbnail": "images/fujifilm-xt5.png",
+      "thumbnail_alt_text": "Fujifilm X-T5",
+      "parent": 0
+    },
+    {
+      "id": 5,
+      "name": "Panasonic Lumix GH6",
+      "slug": "panasonic-lumix-gh6",
+      "description": "Micro Four Thirds camera with 4K video recording",
+      "seo_title": "Buy Panasonic Lumix GH6",
+      "seo_description": "Create cinematic content with Panasonic GH6.",
+      "thumbnail": "images/panasonic-lumix.png",
+      "thumbnail_alt_text": "Panasonic Lumix GH6",
+      "parent": 0
+    },
+    {
+      "id": 6,
+      "name": "Leica Q2",
+      "slug": "leica-q2",
+      "description": "Premium compact camera with a full-frame sensor",
+      "seo_title": "Buy Leica Q2",
+      "seo_description": "Capture timeless moments with Leica Q2.",
+      "thumbnail": "images/leica-q2.png",
+      "thumbnail_alt_text": "Leica Q2",
+      "parent": 0
+    },
+    {
+      "id": 7,
+      "name": "Olympus OM-D E-M1 Mark III",
+      "slug": "olympus-om-d-e-m1-mark-iii",
+      "description": "Professional Micro Four Thirds camera with fast autofocus",
+      "seo_title": "Buy Olympus OM-D E-M1 Mark III",
+      "seo_description": "Experience precision with Olympus E-M1 Mark III.",
+      "thumbnail": "images/olympus-omd.png",
+      "thumbnail_alt_text": "Olympus OM-D E-M1 Mark III",
+      "parent": 0
+    },
+    {
+      "id": 8,
+      "name": "GoPro Hero 11",
+      "slug": "gopro-hero-11",
+      "description": "Action camera with 5K video and hyper-smooth stabilization",
+      "seo_title": "Buy GoPro Hero 11",
+      "seo_description": "Capture your adventures with GoPro Hero 11.",
+      "thumbnail": "images/gopro-hero.png",
+      "thumbnail_alt_text": "GoPro Hero 11",
+      "parent": 0
+    },
+    {
+      "id": 9,
+      "name": "Sony ZV-E10",
+      "slug": "sony-zv-e10",
+      "description": "Sony's vlogging camera with 4K video and flip screen",
+      "seo_title": "Buy Sony ZV E10",
+      "seo_description": "Capture your adventures with Sony ZV E10.",
+      "thumbnail": "images/gopro-hero.png",
+      "thumbnail_alt_text": "Sony ZV E10",
+      "parent": 0
+    }
+]
+
+      

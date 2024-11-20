@@ -1,0 +1,101 @@
+[
+    {
+      "id": 1,
+      "name": "MacBook Pro M2",
+      "slug": "macbook-pro-m2",
+      "description": "Apple's latest MacBook with M2 chip",
+      "seo_title": "Buy MacBook Pro M2",
+      "seo_description": "Get the powerful MacBook Pro M2.",
+      "thumbnail": "images/macbook-pro.png",
+      "thumbnail_alt_text": "MacBook Pro M2",
+      "parent": 0
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS 13 Plus",
+      "slug": "dell-xps-13-plus",
+      "description": "Dell's flagship ultrabook with Intel i7 processor",
+      "seo_title": "Buy Dell XPS 13 Plus",
+      "seo_description": "Explore the sleek and powerful Dell XPS 13 Plus.",
+      "thumbnail": "images/dell-xps.png",
+      "thumbnail_alt_text": "Dell XPS 13 Plus",
+      "parent": 0
+    },
+    {
+      "id": 3,
+      "name": "HP Spectre x360",
+      "slug": "hp-spectre-x360",
+      "description": "HP's premium 2-in-1 with Intel Evo platform",
+      "seo_title": "Buy HP Spectre x360",
+      "seo_description": "Unleash creativity with HP Spectre x360.",
+      "thumbnail": "images/hp-spectre.png",
+      "thumbnail_alt_text": "HP Spectre x360",
+      "parent": 0
+    },
+    {
+      "id": 4,
+      "name": "Asus ZenBook 14 OLED",
+      "slug": "asus-zenbook-14-oled",
+      "description": "Asus ZenBook with stunning OLED display and Intel i9",
+      "seo_title": "Buy Asus ZenBook 14 OLED",
+      "seo_description": "Experience vibrant visuals with Asus ZenBook OLED.",
+      "thumbnail": "images/asus-zenbook.png",
+      "thumbnail_alt_text": "Asus ZenBook 14 OLED",
+      "parent": 0
+    },
+    {
+      "id": 5,
+      "name": "Lenovo ThinkPad X1 Carbon Gen 10",
+      "slug": "lenovo-thinkpad-x1-carbon-gen-10",
+      "description": "Lenovo's lightweight and durable business laptop",
+      "seo_title": "Buy Lenovo ThinkPad X1 Carbon Gen 10",
+      "seo_description": "Work smarter with Lenovo ThinkPad X1 Carbon.",
+      "thumbnail": "images/lenovo-thinkpad.png",
+      "thumbnail_alt_text": "Lenovo ThinkPad X1 Carbon Gen 10",
+      "parent": 0
+    },
+    {
+      "id": 6,
+      "name": "Microsoft Surface Laptop 5",
+      "slug": "microsoft-surface-laptop-5",
+      "description": "Microsoft's latest Surface Laptop with PixelSense display",
+      "seo_title": "Buy Microsoft Surface Laptop 5",
+      "seo_description": "Get the sleek and powerful Microsoft Surface Laptop 5.",
+      "thumbnail": "images/surface-laptop.png",
+      "thumbnail_alt_text": "Microsoft Surface Laptop 5",
+      "parent": 0
+    },
+    {
+      "id": 7,
+      "name": "Razer Blade 15",
+      "slug": "razer-blade-15",
+      "description": "High-performance gaming laptop with Nvidia RTX 3080",
+      "seo_title": "Buy Razer Blade 15",
+      "seo_description": "Game like a pro with Razer Blade 15.",
+      "thumbnail": "images/razer-blade.png",
+      "thumbnail_alt_text": "Razer Blade 15",
+      "parent": 0
+    },
+    {
+      "id": 8,
+      "name": "Acer Predator Helios 300",
+      "slug": "acer-predator-helios-300",
+      "description": "Gaming laptop with Intel i7 and Nvidia RTX 3060",
+      "seo_title": "Buy Acer Predator Helios 300",
+      "seo_description": "Experience power-packed gaming with Acer Predator.",
+      "thumbnail": "images/acer-predator.png",
+      "thumbnail_alt_text": "Acer Predator Helios 300",
+      "parent": 0
+    },
+    {
+      "id": 9,
+      "name": "LG Gram 17",
+      "slug": "lg-gram-17",
+      "description": "Ultralight 17-inch laptop with long battery life",
+      "seo_title": "Buy LG Gram 17",
+      "seo_description": "Lightweight and powerful, the LG Gram 17.",
+      "thumbnail": "images/lg-gram.png",
+      "thumbnail_alt_text": "LG Gram 17",
+      "parent": 0
+    }
+]
